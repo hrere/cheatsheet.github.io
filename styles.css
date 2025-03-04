@@ -1,0 +1,107 @@
+:root {
+    --color-primary: #0505b9;
+    --color-secondary: #0260e3;
+    --color-highlight: #AAEAFD;
+    --color-background: #e3e3e3;
+    --color-code-background: #e3e3e3;
+    --color-code-border: #ddd;
+    --border-radius-default: 5px;
+    --font-size-large: 1.5rem;
+    --font-size-title: 3rem;
+    --padding-default: 0.5rem;
+    --margin-default: 10px;
+    --table-width-full: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+pre, code {
+    font-family: "Courier New", Courier, monospace;
+}
+
+
+header {
+    background-image: url("resources/img/17973908.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    padding: var(--padding-default);
+}
+
+#main-title {
+    color: var(--color-primary);
+    font-size: var(--font-size-title);
+    text-align: center;
+    padding-top: var(--padding-default);
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: center;
+    margin: var(--margin-default);
+    padding: 0;
+    list-style: none;
+}
+
+.banner li {
+    margin: 10px;
+    padding: var(--padding-default);
+    font-size: var(--font-size-large);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--border-radius-default);
+    background-color: var(--color-background);
+}
+
+.banner li:hover {
+    background-color: var(--color-highlight);
+    cursor: pointer;
+}
+
+/* Section "learn" */
+.learn_section h2 {
+    color: var(--color-primary);
+    background-color: var(--color-highlight);
+    padding: var(--padding-default);
+    text-align: center;
+}
+
+/* Code blocks */
+pre code {
+    display: block;
+    overflow-x: auto;
+    max-height: 300px;
+}
+
+/* Tables */
+#data-tables, #visual-rules {
+    width: var(--table-width-full);
+    text-align: left;
+    padding: var(--padding-default);
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow-x: auto;
+}
+
+th, td {
+    border: 1px solid var(--color-primary);
+    text-align: left;
+}
+
+th {
+    background-color: var(--color-highlight);
+}
+
+#visual-rules td:first-child,
+#data-tables td:first-child {
+    font-weight: bold;
+    color: var(--color-secondary);
+}
+
+#visual-rules td:last-child,
+#data-tables td:last-child {
+    background-color: var(--color-code-background);
+}

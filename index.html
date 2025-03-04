@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal cheatsheet to learn HTML and CSS">
+    <title>My personal cheatsheet HTML & CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <!-- En-tête de la page -->
+    <h1 id="main-title">My personal cheatsheet HTML & CSS</h1>
+    <ul class="banner">
+        <li><a href="#learn-html">HTML</a></li>
+        <li><a href="#learn-css">CSS</a></li>
+    </ul>
+</header>
+<main>
+    <!-- Contenu principal de la page -->
+    <section class="learn_section" id="learn-html">
+        <h2>Learn HTML</h2>
+        <h3>Tables</h3>
+        <table id="data-tables">
+            <thead>
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td>
+                    Table
+                </td>
+                <td>It has content that is used to represent a two-dimensional table made of rows and columns.
+                </td>
+                <td>
+<pre>
+<code>&lt;table&gt;
+&lt;!-- rows and columns --&gt;
+&lt;/table&gt;</code>
+</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>
+                    Table Row
+                </td>
+                <td>It is used to add rows to a table before adding table data and table headings.
+                </td>
+                <td>
+<pre>
+<code>&lt;table&gt;
+&lt;tr&gt;
+...
+&lt;/tr&gt;
+&lt;/table&gt;</code>
+</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>
+                    Table Data
+                </td>
+                <td>It can be nested inside a table row element, &lt;tr&gt; , to add a cell of data to a table.
+                </td>
+                <td>
+<pre>
+<code>&lt;table&gt;
+&lt;tr&gt;
+&lt;td&gt;cell one data&lt;/td&gt;
+&lt;td&gt;cell two data&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code>
+</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;thead&gt;</td>
+                <td>
+                    Table Head
+                </td>
+                <td>It defines the headings of table columns encapsulated in table rows.
+                </td>
+                <td>
+<pre>
+<code>&lt;table&gt;
+&lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;heading 1&lt;/th&gt;
+        &lt;th&gt;heading 2&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;</code>
+</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;tbody&gt;</td>
+                <td>
+                    Table Body
+                </td>
+                <td>It is a semantic element that will contain all table data other than table heading and table footer
+                    content.
+                </td>
+                <td>
+<pre>
+<code>&lt;table&gt;
+&lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;row 1&lt;/td&gt;
+        &lt;td&gt;row 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</code>
+</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;th&gt;</td>
+                <td>
+                    Table Heading
+                </td>
+                <td>It is used to add titles to rows and columns of a table and must be enclosed in a table row element,
+                    &lt;tr&gt;.
+                </td>
+                <td>
+<pre>
+<code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;column one&lt;/th&gt;
+        &lt;th&gt;column two&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code>
+</pre>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+    </section>
+    <section class="learn_section" id="learn-css">
+        <h2>Learn CSS</h2>
+        <h3>Visual Rules</h3>
+        <table id="visual-rules">
+            <thead>
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>!important</td>
+                <td>
+                    !important rule
+                </td>
+                <td>
+                    <p>It is used on declarations to override any other
+                        declarations for
+                        a property and ignore selector specificity.</p>
+                    <p>It will ensure that a specific
+                        declaration always applies to the matched elements.
+                        However, generally it is good to avoid using <strong>!important</strong> as bad practice.
+                    </p>
+
+                </td>
+                <td>
+<pre>
+<code>#column-one {
+width: 200px !important;
+}
+</code>
+</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>opacity</td>
+                <td>
+                    Opacity
+                </td>
+                <td>
+                    It can be used to control the transparency of an element.
+                        The value of this property ranges from 0 (transparent) to 1 (opaque).
+                </td>
+                <td>
+<pre>
+<code>opacity: 0.5;</code>
+</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>font-weight</td>
+                <td>
+                    Font Weight
+                </td>
+                <td>
+                    The font-weight CSS property can be used
+                    to set the weight (boldness) of text. The provided
+                    value can be a keyword such as <em>bold</em> or
+                    <em>normal</em>.
+                </td>
+                <td>
+<pre>
+<code>font-weight: bold;</code>
+</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>url()</td>
+                <td>
+                    Resource URLs
+                </td>
+                <td>
+                    It is used to wrap resource URLs. These can be applied to several
+                    properties such as the <strong>background-image</strong>.
+                </td>
+                <td>
+<pre>
+<code>background-image:
+url("../resources/image.png");</code>
+</pre>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+<footer>
+    <!-- Pied de page -->
+    <p>&copy; 2025 Heia Sandford.</p>
+    <nav>
+        <ul>
+            <li><a href="#learn-html">HTML</a></li>
+            <li><a href="#learn-css">CSS</a></li>
+            <li><a href="#main-title">Top</a></li>
+        </ul>
+    </nav>
+
+</footer>
+</body>
+</html>
